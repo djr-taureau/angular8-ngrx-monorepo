@@ -1,0 +1,16 @@
+.page-field {
+    width: 5.6rem;
+    text-align: center;
+}
+
+.mat-paginator {
+    background: transparent;
+    font-size: 14px;
+
+    /deep/.mat-icon-button {
+        color: #f26623;
+    }
+    /deep/.mat-icon-button[disabled][disabled] {
+        color: rgba(0, 0, 0, 0.26);
+    }
+}

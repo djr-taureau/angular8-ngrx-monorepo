@@ -1,0 +1,10 @@
+<a [routerLink]="location" tabindex="{{tabindex}}" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+  <ng-content select="lw-status-list-collapsible">
+  </ng-content>
+  <ng-content>
+  </ng-content>
+  <ng-content select="lw-status-list-status">
+  </ng-content>
+</a>
+<ng-content select=".lw-status-list-items">
+</ng-content>

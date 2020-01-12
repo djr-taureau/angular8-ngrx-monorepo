@@ -1,0 +1,11 @@
+@import '../mixins/elevation.scss';
+
+@for $zValue from 0 through 24 {
+	.#{$elevation-prefix}-#{$zValue} {
+		@include elevation($zValue);
+	}
+}
+
+.lw-elevation {
+	box-shadow: 0.4rem 0.4rem 4.7rem rgba(0, 0, 0, 0.13);
+}

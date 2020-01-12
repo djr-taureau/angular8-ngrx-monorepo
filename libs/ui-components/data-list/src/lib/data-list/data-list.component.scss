@@ -1,0 +1,26 @@
+@import '../../../../../styles/_framework';
+
+.dw-data-list-item-header {
+	display: inline-block;
+	font-size: 1.3rem;
+	font-weight: $font-weight-light;
+	text-transform: uppercase;
+	color: $color-grey-light;
+	&:after {
+		content: '/';
+		display: inline-block;
+		margin: 0 1em;
+	}
+	&:last-of-type:after {
+		content: '';
+		display: none;
+	}
+}
+
+.dw-data-list-item-action {
+	padding: 10px;
+	height: 100%;
+	flex: 1;
+	display: flex;
+	cursor: pointer;
+}

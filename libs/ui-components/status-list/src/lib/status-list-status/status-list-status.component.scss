@@ -1,0 +1,26 @@
+@import '../../../../../styles/_framework';
+
+$indicator-size: 1rem;
+
+:host {
+	display: block;
+	position: absolute;
+	right: 1.5rem;
+	top: 50%;
+	transform: translateY(-50%);
+	height: $indicator-size;
+	width: $indicator-size;
+	background-color: #000;
+	border-radius: 100%;
+	&.lw-status-list-status- {
+		&complete {
+			background-color: $color-green;
+		}
+		&in-progress {
+			background-color: $color-yellow;
+		}
+		&not-started {
+			background-color: $color-grey;
+		}
+	}
+}

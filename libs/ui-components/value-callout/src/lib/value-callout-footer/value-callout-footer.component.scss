@@ -1,0 +1,16 @@
+@import '../../../../../styles/_framework';
+
+:host {
+	display: block;
+	margin-top: 1.5rem;
+	&.dw-value-callout-footer-up {
+		&:before {
+			@include arrowVertical('up', 1.5);
+		}
+	}
+	&.dw-value-callout-footer-down {
+		&:before {
+			@include arrowVertical('down', 1.5);
+		}
+	}
+}

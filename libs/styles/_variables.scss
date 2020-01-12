@@ -1,0 +1,40 @@
+$rem-base: 62.5%;
+
+//Font Weight Definitions
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+//Color definitions
+$color-white: #ffffff;
+$color-black: #000000;
+
+$color-grey-lightest: #eef1f2;
+$color-grey-lighter: #d7d7d7;
+$color-grey: #9b9b9b;
+$color-grey-light: #959595;
+$color-grey-dark: #3b3b3b;
+$color-purple: #7442a7;
+$color-blue: #6ae6ea;
+$color-blue-bright: #01c6c8;
+$color-yellow: #f6c243;
+$color-green-light: #69ab99;
+$color-green: #75a597;
+$color-green-dark: #17343c;
+$color-green-darker: #061a1e;
+$color-green-bright: #4aa436;
+$color-orange: #e16e38;
+
+$bg-color-grey: #f8f8f8;
+
+//Font definitions
+$font-family-text: 'Lato', sans-serif;
+$font-family-primary: $font-family-text;
+
+//Space definitions
+$spacing-content-padding: 6rem;
+
+//Transitions
+$fast-out-slow-in-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !default;

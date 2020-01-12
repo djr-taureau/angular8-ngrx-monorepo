@@ -1,0 +1,20 @@
+<lw-data-list-item-icon [icon]="icon"></lw-data-list-item-icon>
+<ng-container *ngIf="renderAs==='displayOnly'; else wrappedContent">
+  <div class="data-list-item-content">
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </div>
+</ng-container>
+<div class="data-list-item-actions">
+  <ng-content select="lw-data-list-item-action, [lwDataListItemAction]"></ng-content>
+</div>
+
+<ng-template #wrappedContent>
+  <a class="data-list-item-content" [routerLink]="location">
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </a>
+</ng-template>
+
+<ng-template #content>
+  <ng-content select="lw-data-list-item-header, [lwDataListItemHeader]"></ng-content>
+  <ng-content></ng-content>
+</ng-template>

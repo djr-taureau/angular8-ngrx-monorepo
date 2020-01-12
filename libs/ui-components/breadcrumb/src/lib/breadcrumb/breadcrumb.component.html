@@ -1,0 +1,11 @@
+<dw-breadcrumb-icon *ngIf="dropdownItems" [matMenuTriggerFor]="appMenu"></dw-breadcrumb-icon>
+<mat-menu [overlapTrigger]="false" panelClass="lw-elevation-1" #appMenu="matMenu" class="dw-breadcrumb-mat-menu">
+  <a *ngFor="let dropdownItem of dropdownItems" mat-menu-item [routerLink]="dropdownItem.location">{{dropdownItem.display}}</a>
+</mat-menu>
+<dw-breadcrumb-location *ngFor="let mainItem of mainItems">
+  <a [routerLink]="mainItem.location" *ngIf="mainItem.location; else noLocation">{{mainItem.display}}</a>
+  <ng-template #noLocation>
+    {{mainItem.display}}
+  </ng-template>
+</dw-breadcrumb-location>
+<ng-content></ng-content>

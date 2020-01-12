@@ -1,0 +1,22 @@
+$text-colors: (
+	'orange': $color-orange,
+	'green': $color-green,
+	'dark-green': $color-green-dark,
+	'light-green': $color-green-light,
+	'white': $color-white,
+	'black': $color-black,
+	'grey': $color-grey-lighter,
+	'light-grey': $color-grey-light,
+);
+
+//Function for getting a specific text color
+@function text-color($key) {
+	$color: get-map-color($key, $text-colors, '$text-colors');
+	@return $color;
+}
+
+@mixin text-colors($class-prefix: 'lw-color') {
+	color: text-color('dark-green');
+
+	@include map-colors($text-colors, $class-prefix, ('color'));
+}

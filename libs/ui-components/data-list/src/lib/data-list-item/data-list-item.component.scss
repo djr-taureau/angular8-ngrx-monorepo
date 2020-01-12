@@ -1,0 +1,39 @@
+@import '../../../../../styles/_framework';
+
+:host-context {
+	display: flex;
+	font-size: 1.4rem;
+	color: #153C3F;
+	line-height: 2.6rem;
+	font-family: $font-family-text;
+	position: relative;
+}
+
+a.data-list-item-content {
+	color: $color-grey-dark;
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.01);
+	}
+}
+
+.data-list-item-content {
+	padding: 1.4rem 7.5rem 1.4rem 2.5rem;
+	flex-grow: 10;
+}
+
+.data-list-item-actions {
+	align-items: center;
+	position: absolute;
+	width: 5.5rem;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+:host(.data-item-is-removing) {
+	opacity: 0.2;
+}
+
+.striped :host-context:nth-child(odd) {
+	// background-color: $color-grey-lightest;
+}

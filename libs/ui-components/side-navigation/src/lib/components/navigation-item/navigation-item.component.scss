@@ -1,0 +1,100 @@
+@import '../../../../../../styles/_framework';
+
+$icon-size: 2.8rem;
+
+.dw-navigation-item {
+	display: flex;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+
+
+
+	&.callout {
+		a,
+		.navigation-item-display-only,
+		button {
+		color: #66AA99;
+		}
+	}
+
+	a,
+	.navigation-item-display-only,
+	button {
+		padding: 2.2rem 4.5rem;
+		display: block;
+		width: 100%;
+		font-size: 1.6rem;
+		opacity: 0.8;
+		background-color: rgba(255, 255, 255, 0);
+		color: #fff;
+		font-family: $font-family-text;
+		font-weight: $font-weight-light;
+	}
+
+	a,
+	button {
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.05);
+		}
+	}
+
+	button {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		border: 0;
+		text-align: left;
+		&:focus {
+			outline-color: -webkit-focus-ring-color;
+			outline-style: auto;
+			outline-width: 0.1rem;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.navigation-item-icon-text {
+		display: flex;
+		align-items: center;
+		height: $icon-size;
+		span {
+			display: block;
+			line-height: 0;
+		}
+	}
+
+	a {
+		color: $color-white;
+		text-decoration: none;
+		display: flex;
+		&.is-active {
+			@include linear-gradient(to right, #154c57, #154c57 20%, #14606b);
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				width: 0.5rem;
+				background-color: $color-orange;
+			}
+			svg path {
+				fill: #74a596;
+			}
+		}
+	}
+
+	.icon {
+		display: block;
+		font-size: $icon-size;
+		margin-right: 1.3rem;
+		path {
+			fill: rgba(255, 255, 255, 0.8);
+		}
+		&:before {
+			display: block;
+		}
+	}
+}

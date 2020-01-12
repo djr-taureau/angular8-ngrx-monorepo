@@ -1,0 +1,22 @@
+<nav mat-tab-nav-bar>
+  <a mat-tab-link [routerLink]="navItem.location" [queryParams]="navItem.queryParams" routerLinkActive
+    [routerLinkActiveOptions]="{exact: true}" #rla="routerLinkActive" [active]="rla.isActive" *ngFor="let navItem of navigation">
+    <ng-container *ngIf="navItem.icon">
+      <mat-icon>{{navItem.icon}}</mat-icon>
+    </ng-container>
+    <div class="text-container">
+      <div>{{navItem.display}}</div>
+      <ng-container *ngIf="navItem.children?.length > 0">
+        <button (click)="swallow($event)" class="child-menu-button" mat-icon-button [matMenuTriggerFor]="childNavigation">
+          <mat-icon>arrow_drop_down</mat-icon>
+        </button>
+        <mat-menu [class]="'page-child-menu-panel'" [xPosition]="'before'" [yPosition]="'below'"  #childNavigation="matMenu">
+            <a mat-menu-item [routerLink]="child.location" *ngFor="let child of navItem.children">{{child.display}}</a>
+        </mat-menu>
+      </ng-container>
+      <ng-container *ngIf="navItem.count">
+        <lw-badge>{{navItem.count}}</lw-badge>
+      </ng-container>
+    </div>
+  </a>
+</nav>

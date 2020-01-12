@@ -1,0 +1,18 @@
+.lw-page-view {
+	display: grid;
+	grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+	grid-column-gap: 6rem;
+}
+
+.lw-page-view-header {
+    grid-column: auto;
+}
+
+.lw-page-view-menu {
+    grid-column: auto;
+    background-color: #EDF1F2;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}

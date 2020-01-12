@@ -1,0 +1,49 @@
+:host {
+    display: block;
+    margin-top: 3.8rem;
+    margin-bottom: 5.3rem;
+}
+
+.mat-tab-nav-bar {
+    border-bottom: none;
+    background-color: #EDF1F2;
+}
+
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    height: 0.7rem;
+}
+
+.mat-tab-link {
+    font-size: 1.6rem;
+    font-weight: 300;
+    height: 6rem;
+    color: #959595;
+    min-width: 156px;
+    min-height: 7.3rem;
+    padding-bottom: 0.7rem;
+    padding: 0 4rem 0.7rem 4rem;
+}
+
+.mat-tab-link.mat-tab-label-active {
+    color: #153C3F;
+}
+
+.dw-badge {
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+}
+
+.child-menu-button {
+    background-color: inherit;
+    border: 0;
+    width: 17px;
+    padding: 0;
+    &:focus {
+        outline: none;
+    }
+}

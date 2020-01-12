@@ -61,6 +61,7 @@
     "moment": "^2.24.0",
     "mongoose": "^5.5.1",
     "ngrx-store-logger": "^0.2.3",
+    "ngx-file-drop": "^8.0.8",
     "ramda": "^0.26.1",
     "rxjs": "~6.5.4",
     "tslib": "1.9.3",

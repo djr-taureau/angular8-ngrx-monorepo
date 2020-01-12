@@ -1,0 +1,78 @@
+.lw-section {
+    font-family: 'Lato';
+    padding: 0 3.1rem 0 3.8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 7.3rem;
+}
+
+.page-sub-header {
+    padding: 2.9rem 3.8rem;
+
+    .lw-section-title {
+        margin: 0;
+    }
+}
+
+.theme-grey {
+    background-color: #E6EBEC;
+    color: #153C3F;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0.15px;
+    border-top: 1px solid #D8DDDF;
+    border-right: 1px solid #D8DDDF;
+    border-bottom: 1px solid #D8DDDF;
+}
+
+.theme-dark-green {
+    background-color: #154E59;
+    color: #fff;
+}
+.theme-white {
+    background-color: #fff;
+    color: #153C3F;
+}
+
+.theme-blue {
+    background-color: #02C6C8;
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.theme-dark {
+    position: relative;
+    color: #ffffff;
+    background-color: #0f252b;
+    background-repeat: no-repeat;
+	background-size: 100rem;
+	background-position: right -5rem center;
+    overflow: hidden;
+    background-image: url('/assets/accents/overview-background.svg');
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: -5rem;
+        transform: translateY(66%);
+        display: block;
+        height: 70rem;
+        width: 70rem;
+        background: radial-gradient(
+            closest-side,
+            rgba(0, 252, 255, 0.25),
+            rgba(0, 252, 255, 0)
+        );
+        z-index: 0;
+    }
+
+    .mat-button {
+        z-index: 101;
+    }
+
+    .lw-section-subtitle {
+        color: #66AA99;
+    }
+}

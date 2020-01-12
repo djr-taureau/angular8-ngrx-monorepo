@@ -1,0 +1,9 @@
+@import '../../../../../styles/_framework';
+
+:host {
+	font-weight: $font-weight-black;
+	font-size: 8.5rem;
+	display: block;
+	line-height: 0.84;
+	margin-right: 2rem;
+}

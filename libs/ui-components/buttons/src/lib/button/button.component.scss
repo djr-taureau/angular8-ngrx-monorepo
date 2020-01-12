@@ -1,0 +1,23 @@
+@import '../../../../../styles/_framework';
+
+.lw-icon-button {
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    min-width: 0;
+    flex-shrink: 0;
+    border: none;
+}
+.lw-text-button {
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    text-decoration: underline;
+    color: $color-orange;
+    font-weight: $font-weight-regular;
+    font-size: 1.4rem;
+    padding: 0;
+}

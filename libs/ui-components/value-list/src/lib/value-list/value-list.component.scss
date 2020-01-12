@@ -1,0 +1,41 @@
+@import '../../../../../styles/_framework';
+
+dw-value-list {
+	display: block;
+	font-size: 1.6rem;
+	color: text-color('dark-green');
+	border-bottom-color:text-color('dark-green');
+	font-family: $font-family-primary;
+}
+
+.dw-value-list-header {
+	margin-bottom: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: flex;
+}
+
+.dw-value-list-header-fill {
+	flex: 1;
+}
+
+.dw-value-list-item {
+	font-weight: 300;
+	display: flex;
+}
+
+.dw-value-list-item-index {
+	font-weight: bold;
+	margin-right: 0.4em;
+}
+
+.dw-value-list-item-line {
+	flex: 1;
+	border-bottom: dotted 0.1em;
+	margin: 0 0.2em;
+	margin-bottom: 0.25em;
+}
+
+.dw-value-list-item-text {
+	color: text-color('light-green');
+}

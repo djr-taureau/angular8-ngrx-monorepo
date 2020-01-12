@@ -1,0 +1,11 @@
+@mixin build-font-face($fontfamily, $filename, $style, $weight) {
+    font-family: $fontfamily;
+	src: url('/assets/fonts/#{$filename}.eot'); /* IE9 Compat Modes */
+	src: url('/assets/fonts/#{$filename}.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/#{$filename}.woff2') format('woff2'),
+		url('/assets/fonts/#{$filename}.woff') format('woff'),
+		url('/assets/fonts/#{$filename}.ttf') format('truetype');
+	font-style: $style;
+	font-weight: $weight;
+	text-rendering: optimizeLegibility;
+}

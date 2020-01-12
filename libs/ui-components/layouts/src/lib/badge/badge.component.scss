@@ -1,0 +1,60 @@
+:host() {
+	display: inline-block;
+	box-sizing: border-box;
+	min-width: 10px;
+	padding: 3px 7px;
+	font-size: 11px;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	letter-spacing: 0.12px;
+	background-color: rgba(255, 255, 255, 0.39);
+	border-radius: 10px;
+}
+
+:host(.with-dot) {
+	font-size: 15px;
+	font-weight: normal;
+	letter-spacing: 0.12px;
+    padding: 5px 10px 5px 20px;
+    position: relative;
+    border-radius: 25px;
+    height: 25px;
+
+    &.red .dot {
+        color: #D0021B;
+    }
+
+    &.orange .dot {
+        color: #F26623;
+    }
+
+    &.yellow .dot {
+        color: #FFC000;
+    }
+
+    &.green .dot {
+        color: #67A797;
+    }
+
+    &.grey .dot {
+        color: transparent;
+        -webkit-text-stroke: #9B9B9B 2px;
+    }
+
+	.dot {
+        top: -5px;
+        left: 2px;
+        font-size: 30px;
+        position: absolute;
+        height: 25px;
+	}
+}
+
+:host(.light) {
+	background: rgba(0, 0, 0, 0.07);
+	color: #5a5a5a;
+}

@@ -1,0 +1,50 @@
+.inline-caret {
+	line-height: 0.8;
+	
+
+	.inline-caret:first-child:not(:last-child) {
+		margin-right: -6px;
+	}
+	.inline-caret:last-child:not(:first-child) {
+		margin-left: -4px;
+	}
+
+	&-top {
+		position: relative;
+		bottom: 0.45em;
+	}
+
+	&-small {
+		&:before {
+			font-size: 0.8em;
+			margin-left: 6px;
+		}
+	}
+
+	&-large {
+		&:before {
+			font-size: 0.7em;
+		}
+	}
+
+	&.inline-caret-top.inline-caret-large {
+		position: relative;
+		bottom: 0.25em;
+	}
+
+	&.caret-color-orange:before {
+		color: $color-orange;
+	}
+	&.caret-color-white:before {
+		color: white;
+	}
+	&.caret-color-green:before {
+		color: $color-green-bright;
+	}
+	&.caret-color-blue:before {
+		color: $color-blue;
+	}
+	&.caret-color-red:before {
+		color: $color-orange;
+	}
+}

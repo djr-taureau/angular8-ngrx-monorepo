@@ -1,0 +1,22 @@
+@import '../../../../../styles/_framework';
+
+button {
+	// -webkit-appearance: none;
+	// -moz-appearance: none;
+	background-color: transparent;
+	border: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 4.5rem;
+	padding-right: 1rem;
+	text-align: right;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.icon {
+	color: #000;
+}

@@ -1,0 +1,27 @@
+@mixin border-caret($color) {
+	&:after {
+		content: '';
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-top: 0.5rem solid transparent;
+		border-left: 0.6rem solid $color;
+		border-bottom: 0.5rem solid transparent;
+		margin-left: 0.7rem;
+	}
+}
+
+@mixin font-icon {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
