@@ -18,7 +18,7 @@ import { NxModule } from '@nrwl/nx';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
-import { storeFreeze } from 'ngrx-store-freeze';
+
 import { storeLogger } from 'ngrx-store-logger';
 import { HttpClientModule } from '@angular/common/http';
 import { NavComponent } from './nav/nav.component';
@@ -58,12 +58,12 @@ export function logger(reducer: ActionReducer<any>): any {
       { app: appReducer, products: productsReducer },
       {
         initialState: { app: appInitialState, products: productsInitialState },
-        metaReducers: !environment.production ? [storeFreeze, logger] : []
+        metaReducers: !environment.production ? [logger] : [], runtimeChecks: { strictStateImmutability: true, strictActionImmutability: true }
       }
     ),
     EffectsModule.forRoot([AppEffects, ProductsEffects]),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
-    StoreRouterConnectingModule,
+    StoreRouterConnectingModule.forRoot(),
     AuthModule,
     BrowserAnimationsModule,
   ],
