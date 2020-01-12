@@ -60,6 +60,7 @@
     "lodash-es": "^4.17.11",
     "moment": "^2.24.0",
     "mongoose": "^5.5.1",
+    "ngrx-store-freeze": "^0.2.4",
     "ngrx-store-logger": "^0.2.3",
     "ngx-file-drop": "^8.0.8",
     "ramda": "^0.26.1",
