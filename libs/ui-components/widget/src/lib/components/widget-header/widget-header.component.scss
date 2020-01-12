@@ -1,0 +1,70 @@
+@import '../../../../../../styles/_framework';
+
+.dw-widget-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1.8rem;
+	line-height: 1;
+	min-height: 7.3rem;
+	font-family: $font-family-primary;
+	padding: 0 2.6rem 0 3rem;
+	color: #153C3F;
+	background-color: $color-white;
+	text-transform: uppercase;
+	font-weight: normal;
+
+	border-bottom: .1rem solid #D8DDDF;
+
+
+	&.dw-color-orange {
+		color: $color-white;
+		background-color: $color-orange;
+	}
+	&.dw-color-green {
+		color: $color-white;
+		background-color: $color-green;
+	}
+	&.dw-color-white {
+		color: #153C3F;
+		background-color: $color-white;
+	}
+	&.dw-color-blue {
+		color: $color-orange;
+		background-color: $color-blue-bright;
+	}
+
+	.dw-badge {
+		background-color: rgb(207,207,207);
+		color: #082F36;
+	}
+
+	.dw-widget-subtitle {
+		margin-left: 12px;
+	}
+
+	.dw-widget-header-text {
+	    display: flex;
+    	align-items: center;
+	}
+}
+
+
+
+// .dw-widget-subtitle:before {
+// 	content: '/';
+// 	display: inline-block;
+// 	color: $color-grey-lighter;
+// 	font-weight: 300;
+// 	margin: 0 0.8em;
+// }
+
+.dw-widget-header-links {
+	display: flex;
+}
+
+.dw-widget-link {
+	font-size: 1.4rem;
+	margin-left: 0.7rem;
+	text-transform: none;
+}

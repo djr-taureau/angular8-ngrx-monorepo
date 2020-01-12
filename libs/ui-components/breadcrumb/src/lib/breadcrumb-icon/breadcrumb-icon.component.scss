@@ -1,0 +1,16 @@
+@import '../../../../../styles/_framework';
+@import '../breadcrumb-mixins.scss';
+
+button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: 0;
+	background-color: transparent;
+	padding: 0;
+	&:hover {
+		cursor: pointer;
+	}
+	i:before {
+		@include icon-properties();
+	}
+}

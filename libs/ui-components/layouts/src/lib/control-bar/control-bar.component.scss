@@ -1,0 +1,80 @@
+// .theme-dark-green {
+// 	.lw-control-bar {
+// 		.mat-select-value {
+// 			color: #fff;
+// 		}
+// 	}
+// }
+
+.dw-control-bar {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	z-index: 100;
+
+	.dw-control-bar-control {
+		margin-left: 0.8rem;
+	}
+
+	.controls-container {
+		flex: 1;
+		display: flex;
+		justify-content: flex-end;
+
+		align-items: center;
+
+		.mat-flat-button {
+			height: 44px;
+			padding: 0 32px;
+			background-color: #f26623;
+		}
+	}
+
+	.control-bar-text {
+		flex: 1;
+		font-weight: bold;
+	}
+
+	.mat-input-element {
+		color: #153c3f;
+	}
+	.mat-form-field-outline {
+		color: #d8dddf;
+	}
+	.mat-form-field-flex {
+		top: 12px;
+	}
+	.mat-form-field-infix {
+		border-top: none;
+	}
+
+	.mat-form-field-appearance-outline .mat-form-field-prefix {
+		padding-right: 10px;
+		top: 7px;
+		color: #959595;
+	}
+
+	.mat-form-field-outline-start,
+	.mat-form-field-outline-end {
+		background-color: #ffffff;
+		border-radius: 0 !important;
+		border-width: 1px;
+    }
+
+    .mat-paginator-page-size-label {
+        margin-top: 20px;
+	}
+
+	.mat-select-arrow {
+		margin-top: 13px;
+	}
+
+	.mat-paginator {
+		.mat-select-arrow {
+			margin-top: 0px;
+		}
+	}
+}

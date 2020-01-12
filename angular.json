@@ -366,6 +366,449 @@
           "styleext": "scss"
         }
       }
+    },
+    "ui-components-core": {
+      "root": "libs/ui-components/core",
+      "sourceRoot": "libs/ui-components/core/src",
+      "projectType": "library",
+      "prefix": "dw",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui-components/core/tsconfig.lib.json"],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "common": {
+      "root": "libs/common",
+      "sourceRoot": "libs/common/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/common/tsconfig.lib.json"],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "ui-components-attachment": {
+      "root": "libs/ui-components/attachment",
+      "sourceRoot": "libs/ui-components/attachment/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui-components/attachment/tsconfig.lib.json",
+              "libs/ui-components/attachment/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ui-components/attachment/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui-components/attachment/jest.config.js",
+            "tsConfig": "libs/ui-components/attachment/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "ui-components-breadcrumb": {
+      "root": "libs/ui-components/breadcrumb",
+      "sourceRoot": "libs/ui-components/breadcrumb/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui-components/breadcrumb/tsconfig.lib.json",
+              "libs/ui-components/breadcrumb/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ui-components/breadcrumb/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui-components/breadcrumb/jest.config.js",
+            "tsConfig": "libs/ui-components/breadcrumb/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "ui-components-buttons": {
+      "root": "libs/ui-components/buttons",
+      "sourceRoot": "libs/ui-components/buttons/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui-components/buttons/tsconfig.lib.json",
+              "libs/ui-components/buttons/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/ui-components/buttons/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui-components/buttons/jest.config.js",
+            "tsConfig": "libs/ui-components/buttons/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "ui-components-data-list": {
+      "root": "libs/ui-components/data-list",
+      "sourceRoot": "libs/ui-components/data-list/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui-components/data-list/tsconfig.lib.json",
+              "libs/ui-components/data-list/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ui-components/data-list/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui-components/data-list/jest.config.js",
+            "tsConfig": "libs/ui-components/data-list/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "ui-components-file-upload": {
+      "root": "libs/ui-components/file-upload",
+      "sourceRoot": "libs/ui-components/file-upload/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui-components/file-upload/tsconfig.lib.json",
+              "libs/ui-components/file-upload/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ui-components/file-upload/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui-components/file-upload/jest.config.js",
+            "tsConfig": "libs/ui-components/file-upload/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "ui-components-icons": {
+      "root": "libs/ui-components/icons",
+      "sourceRoot": "libs/ui-components/icons/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui-components/icons/tsconfig.lib.json",
+              "libs/ui-components/icons/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/ui-components/icons/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui-components/icons/jest.config.js",
+            "tsConfig": "libs/ui-components/icons/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "ui-components-layouts": {
+      "root": "libs/ui-components/layouts",
+      "sourceRoot": "libs/ui-components/layouts/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui-components/layouts/tsconfig.lib.json",
+              "libs/ui-components/layouts/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/ui-components/layouts/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui-components/layouts/jest.config.js",
+            "tsConfig": "libs/ui-components/layouts/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "ui-components-page-layouts": {
+      "root": "libs/ui-components/page-layouts",
+      "sourceRoot": "libs/ui-components/page-layouts/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui-components/page-layouts/tsconfig.lib.json",
+              "libs/ui-components/page-layouts/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ui-components/page-layouts/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui-components/page-layouts/jest.config.js",
+            "tsConfig": "libs/ui-components/page-layouts/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "ui-components-page-navigation": {
+      "root": "libs/ui-components/page-navigation",
+      "sourceRoot": "libs/ui-components/page-navigation/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui-components/page-navigation/tsconfig.lib.json",
+              "libs/ui-components/page-navigation/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ui-components/page-navigation/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui-components/page-navigation/jest.config.js",
+            "tsConfig": "libs/ui-components/page-navigation/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "ui-components-side-navigation": {
+      "root": "libs/ui-components/side-navigation",
+      "sourceRoot": "libs/ui-components/side-navigation/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui-components/side-navigation/tsconfig.lib.json",
+              "libs/ui-components/side-navigation/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ui-components/side-navigation/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui-components/side-navigation/jest.config.js",
+            "tsConfig": "libs/ui-components/side-navigation/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "ui-components-status-list": {
+      "root": "libs/ui-components/status-list",
+      "sourceRoot": "libs/ui-components/status-list/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui-components/status-list/tsconfig.lib.json",
+              "libs/ui-components/status-list/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ui-components/status-list/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui-components/status-list/jest.config.js",
+            "tsConfig": "libs/ui-components/status-list/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "ui-components-text-editor": {
+      "root": "libs/ui-components/text-editor",
+      "sourceRoot": "libs/ui-components/text-editor/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui-components/text-editor/tsconfig.lib.json",
+              "libs/ui-components/text-editor/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ui-components/text-editor/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui-components/text-editor/jest.config.js",
+            "tsConfig": "libs/ui-components/text-editor/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "ui-components-value-list": {
+      "root": "libs/ui-components/value-list",
+      "sourceRoot": "libs/ui-components/value-list/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui-components/value-list/tsconfig.lib.json",
+              "libs/ui-components/value-list/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ui-components/value-list/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui-components/value-list/jest.config.js",
+            "tsConfig": "libs/ui-components/value-list/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "ui-components-widget": {
+      "root": "libs/ui-components/widget",
+      "sourceRoot": "libs/ui-components/widget/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui-components/widget/tsconfig.lib.json",
+              "libs/ui-components/widget/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/ui-components/widget/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui-components/widget/jest.config.js",
+            "tsConfig": "libs/ui-components/widget/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "ui-components-value-callout": {
+      "root": "libs/ui-components/value-callout",
+      "sourceRoot": "libs/ui-components/value-callout/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui-components/value-callout/tsconfig.lib.json",
+              "libs/ui-components/value-callout/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ui-components/value-callout/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui-components/value-callout/jest.config.js",
+            "tsConfig": "libs/ui-components/value-callout/tsconfig.spec.json"
+          }
+        }
+      }
     }
   },
   "defaultProject": "electronic-store",

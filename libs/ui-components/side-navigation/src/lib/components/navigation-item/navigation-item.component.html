@@ -1,0 +1,18 @@
+<ng-template #content>
+  <i *ngIf="icon" class="icon icon-{{icon}}"></i>
+  <div class="navigation-item-icon-text">
+    <span><ng-content></ng-content></span>
+  </div>
+</ng-template>
+
+<ng-container [ngSwitch]="renderAs">
+  <ng-container *ngSwitchCase="'action'">
+    <button (click)="raiseEvent()"><ng-container *ngTemplateOutlet="content"></ng-container></button>
+  </ng-container>
+  <ng-container *ngSwitchCase="'location'">
+    <a [routerLink]=[location] routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+      <ng-container *ngTemplateOutlet="content"></ng-container>
+    </a>
+  </ng-container>
+  <span *ngSwitchCase="'displayOnly'" class="navigation-item-display-only"><ng-container></ng-container></span>
+</ng-container>

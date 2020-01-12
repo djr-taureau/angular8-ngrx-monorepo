@@ -1,0 +1,74 @@
+@import '../../../../../styles/_framework';
+@import '../breadcrumb-mixins.scss';
+
+.dw-breadcrumb {
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding: 0 0.5rem;
+	margin: 4.5rem 0;
+	font-weight: $font-weight-regular;
+}
+
+a {
+	display: inline-block;
+	color: $color-grey;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.mat-menu-content {
+	border: 0.1rem solid #edf1f2;
+	padding: 0.8rem 0;
+	a {
+		display: flex;
+		align-items: center;
+		font-weight: $font-weight-light;
+		font-size: 1.7rem;
+		padding: 1.2rem 2.4rem;
+		border-top: 0.1rem solid #fff;
+		border-bottom: 0.1rem solid #fff;
+		color: $color-green-dark;
+		&:before {
+			content: '\e913';
+			margin-right: 1.5rem;
+			@include font-icon();
+			@include icon-properties();
+		}
+		&:hover {
+			background-color: $color-grey-lightest;
+			border-color: #edf1f2;
+			text-decoration: none;
+		}
+	}
+}
+
+i {
+	font-size: 2.5rem;
+}
+
+.dw-breadcrumb-location {
+	display: flex;
+	align-items: center;
+	font-size: 2.4rem;
+	color: $color-grey-dark;
+	&:before {
+		content: '\e919';
+		transform: rotate(-90deg);
+		@include icon-properties();
+		font-size: 2rem;
+		@include font-icon();
+		margin: 0 2rem;
+	}
+	&:first-child {
+		&:before {
+			display: none;
+		}
+	}
+}
+
+.dw-breadcrumb-mat-menu {
+	margin-top: 1.5rem;
+	box-shadow: 0 0.2rem 1.8rem rgba(0, 0, 0, 0.08);
+}

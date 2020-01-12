@@ -1,0 +1,51 @@
+@import '../../../../../styles/_framework';
+
+.dw-value-callout {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 2rem;
+	grid-row-gap: $spacing-content-padding*0.66;
+	padding: $spacing-content-padding*0.66 $spacing-content-padding;
+	color: #154c57;
+	&-dark {
+		color: #ffffff;
+		background-color: #0f252b;
+	}
+	font-family: $font-family-primary;
+	font-size: 1.6rem;
+	font-weight: $font-weight-light;
+	background-repeat: no-repeat;
+	background-size: 100rem;
+	background-position: right -5rem center;
+	overflow: hidden;
+	&-dark {
+		background-image: url('/assets/accents/overview-background.svg');
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: -5rem;
+			transform: translateY(66%);
+			display: block;
+			height: 70rem;
+			width: 70rem;
+			background: radial-gradient(
+				closest-side,
+				rgba(0, 252, 255, 0.25),
+				rgba(0, 252, 255, 0)
+			);
+			z-index: 0;
+		}
+	}
+
+	h1 {
+		grid-column: 1 / -1;
+		font-weight: $font-weight-regular;
+		color: #154c57;
+		margin: 0;
+	}
+	&-dark h1 {
+		color: #ffffff;
+	}
+}

@@ -1,0 +1,64 @@
+@import '../../../../../styles/_framework';
+
+$border-properties: $color-grey-lighter 0.1rem solid;
+
+:host {
+	display: block;
+	position: relative;
+	font-size: 1.6rem;
+	border-top: $border-properties;
+
+	font-weight: $font-weight-bold;
+	&:last-child {
+		border-bottom: $border-properties;
+	}
+}
+
+/deep/ {
+	.lw-status-list-item .lw-status-list-item {
+		font-weight: $font-weight-light;
+		button {
+			width: 7.5rem;
+		}
+		a {
+			padding-left: 7.5rem;
+		}
+		&:last-child {
+			border-bottom: 0;
+		}
+		.lw-status-list-item {
+			button {
+				width: 12.5rem;
+			}
+			a {
+				padding-left: 12.5rem;
+			}
+			.lw-status-list-item a {
+				padding-left: 17.5rem;
+			}
+		}
+	}
+}
+
+a {
+	display: block;
+	padding: 1.3rem 0 1.3rem 4.5rem;
+	position: relative;
+	&:hover {
+		text-decoration: none;
+		background-color: rgba(0, 0, 0, 0.01);
+	}
+	&.is-active {
+		background-color: rgba(0, 0, 0, 0.01);
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			width: 0.5rem;
+			background-color: $color-orange;
+		}
+	}
+}

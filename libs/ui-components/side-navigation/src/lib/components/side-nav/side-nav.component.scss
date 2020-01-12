@@ -1,0 +1,54 @@
+@import '../../../../../../styles/_framework';
+
+.dw-side-nav {
+	display: block;
+	@include linear-gradient($color-green-dark, $color-green-darker);
+	min-height: 100vh;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	& > * {
+		z-index: 1;
+		position: relative;
+	}
+
+	box-shadow: 0 0px 112px 0px rgba(0,0,0, 0.2);
+	z-index: 2;
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translateX(70%);
+		display: block;
+		height: 40rem;
+		width: 40rem;
+		background: radial-gradient(
+			closest-side,
+			rgba(0, 252, 255, 0.25),
+			rgba(0, 252, 255, 0)
+		);
+		z-index: 0;
+	}
+}
+
+.dw-navigation-group {
+	display: block;
+	border-top: solid 0.1rem #000508;
+	padding: 2.3rem 0;
+	&:first-of-type {
+		border-top: 0;
+		padding-top: 0;
+	}
+}
+
+.dw-navigation-title {
+	display: block;
+	font-family: $font-family-text;
+	font-weight: $font-weight-semibold;
+	font-size: 1.8rem;
+	color: #fefefe;
+	padding: 2.7rem 4.5rem;
+	text-transform: uppercase;
+}

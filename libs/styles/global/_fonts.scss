@@ -1,0 +1,29 @@
+/* Webfont: Lato-Light */
+@font-face {
+    @include build-font-face('Lato', 'Lato-Light', normal, $font-weight-light);
+}
+
+/* Webfont: Lato-LightItalic */
+@font-face {
+    @include build-font-face('Lato', 'Lato-LightItalic', italic, $font-weight-light);
+}
+
+/* Webfont: Lato-Regular */
+@font-face {
+    @include build-font-face('Lato', 'Lato-Regular', normal, $font-weight-regular);
+}
+
+/* Webfont: Lato-Semibold */
+@font-face {
+    @include build-font-face('Lato', 'Lato-Semibold', normal, $font-weight-semibold);
+}
+
+/* Webfont: Lato-Bold */
+@font-face {
+    @include build-font-face('Lato', 'Lato-Bold', normal, $font-weight-bold);
+}
+
+/* Webfont: Lato-Black */
+@font-face {
+    @include build-font-face('Lato', 'Lato-Black', normal, $font-weight-black);
+}

@@ -1,0 +1,18 @@
+@function get-map-color($key, $map, $map-name) {
+	@if map-has-key($map, $key) {
+		@return map-get($map, $key);
+	}
+
+	@warn "Unknown `#{$key}` in #{$map-name}.";
+	@return null;
+}
+
+@mixin map-colors($color-map, $class-prefix: 'lw-color', $props: ('color')) {
+	@each $color, $color-value in $color-map {
+		&.#{$class-prefix}-#{$color} {
+			@each $prop in $props {
+				#{$prop}: $color-value;
+			}
+		}
+	}
+}

@@ -16,7 +16,56 @@
     "paths": {
       "@ngprojects/*": ["libs/*"],
       "@ngprojects/shared": ["libs/shared/src/index.ts"],
-      "@ngprojects/auth": ["libs/auth/src/index.ts"]
+      "@ngprojects/auth": ["libs/auth/src/index.ts"],
+      "@ngprojects/ui-components/core": [
+        "libs/ui-components/core/src/index.ts"
+      ],
+      "@ngprojects/common": ["libs/common/src/index.ts"],
+      "@ngprojects/ui-components/attachment": [
+        "libs/ui-components/attachment/src/index.ts"
+      ],
+      "@ngprojects/ui-components/breadcrumb": [
+        "libs/ui-components/breadcrumb/src/index.ts"
+      ],
+      "@ngprojects/ui-components/buttons": [
+        "libs/ui-components/buttons/src/index.ts"
+      ],
+      "@ngprojects/ui-components/data-list": [
+        "libs/ui-components/data-list/src/index.ts"
+      ],
+      "@ngprojects/ui-components/file-upload": [
+        "libs/ui-components/file-upload/src/index.ts"
+      ],
+      "@ngprojects/ui-components/icons": [
+        "libs/ui-components/icons/src/index.ts"
+      ],
+      "@ngprojects/ui-components/layouts": [
+        "libs/ui-components/layouts/src/index.ts"
+      ],
+      "@ngprojects/ui-components/page-layouts": [
+        "libs/ui-components/page-layouts/src/index.ts"
+      ],
+      "@ngprojects/ui-components/page-navigation": [
+        "libs/ui-components/page-navigation/src/index.ts"
+      ],
+      "@ngprojects/ui-components/side-navigation": [
+        "libs/ui-components/side-navigation/src/index.ts"
+      ],
+      "@ngprojects/ui-components/status-list": [
+        "libs/ui-components/status-list/src/index.ts"
+      ],
+      "@ngprojects/ui-components/text-editor": [
+        "libs/ui-components/text-editor/src/index.ts"
+      ],
+      "@ngprojects/ui-components/value-list": [
+        "libs/ui-components/value-list/src/index.ts"
+      ],
+      "@ngprojects/ui-components/widget": [
+        "libs/ui-components/widget/src/index.ts"
+      ],
+      "@ngprojects/ui-components/value-callout": [
+        "libs/ui-components/value-callout/src/index.ts"
+      ]
     }
   }
 }
