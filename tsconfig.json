@@ -16,7 +16,11 @@
     "paths": {
       "@ngprojects/*": ["libs/*"],
       "@ngprojects/shared": ["libs/shared/src/index.ts"],
-      "@ngprojects/auth": ["libs/auth/src/index.ts"]
+      "@ngprojects/auth": ["libs/auth/src/index.ts"],
+      "@ngprojects/ui-components/core": [
+        "libs/ui-components/core/src/index.ts"
+      ],
+      "@ngprojects/common": ["libs/common/src/index.ts"]
     }
   }
 }

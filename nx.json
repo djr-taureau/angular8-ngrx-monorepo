@@ -28,6 +28,12 @@
     },
     "auth": {
       "tags": []
+    },
+    "ui-components-core": {
+      "tags": []
+    },
+    "common": {
+      "tags": []
     }
   }
 }
