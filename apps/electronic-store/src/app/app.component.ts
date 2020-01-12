@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ProductsService } from './products.service';
 import { Observable } from 'rxjs';
 import { CartService } from './cart.service';
-import { MatDialog, MatSnackBar } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { CartComponent } from './cart/cart.component';
 import { SwUpdate } from '@angular/service-worker';
 
