@@ -59,7 +59,7 @@
     "jwks-rsa": "^1.4.0",
     "lodash-es": "^4.17.11",
     "moment": "^2.24.0",
-    "mongoose": "^5.5.1",
+    "mongoose": "^5.7.5",
     "ngrx-store-freeze": "^0.2.4",
     "ngrx-store-logger": "^0.2.3",
     "ngx-file-drop": "^8.0.8",
