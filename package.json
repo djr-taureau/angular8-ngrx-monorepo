@@ -43,7 +43,7 @@
     "@collab-ui/angular": "^5.0.0",
     "@momentum-ui/angular": "^10.3.9",
     "@nestjs/common": "5.5.0",
-    "@nestjs/core": "5.5.0",
+    "@nestjs/core": "9.0.5",
     "@ngrx/effects": "8.6.0",
     "@ngrx/entity": "8.6.0",
     "@ngrx/router-store": "8.6.0",
